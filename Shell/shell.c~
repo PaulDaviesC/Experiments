@@ -1,0 +1,24 @@
+#include<unistd.h>
+#include<string.h>
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+	char path[]="/bin/%s",*arg=(char *)malloc(15*sizeof(char)),*cmd=(char *)malloc(15*sizeof(char)),*cmdarg=(char *)malloc(15*sizeof(char));
+	while(1){
+		printf("paul@linux:~$");
+		cmdarg=gets(cmdarg);
+		if(fork()==0){
+			if(strcmp("exit",cmdarg)==0){ //Type exit to Exit ;)
+				kill(getppid(),9);
+				kill(getpid(),9);
+			}
+			cmd=(char *)strtok(cmdarg," ");
+			arg=(char *)strtok(NULL," ");
+			sprintf(path,"/bin/%s",cmd);
+			execl(path,cmd,arg,(char *)NULL);
+		}
+		else
+			wait();
+	}
+}

@@ -1,0 +1,5 @@
+The program has been written to display 
+how the fork() and execl() works.The p
+rogram implements a minmal shell throug
+h which you can execute the commands av
+ailable with the /bin/ directory
