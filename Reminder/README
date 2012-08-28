@@ -1,0 +1,7 @@
+Here is a simple application which makes use of Kernel timers and the Gnome libnotify library.This pr
+ogram reminds you to take rest at intervals while you are sitting in front of your linux box. :).Run "m
+ake" to have the executable. This executable have to be started in the beggining so that it reminds y
+ou automatically.I am really sorry,I am yet to write an installation script for it.
+
+Note : countDown() in lib/timer.h is same as standard system call alarm()
+
