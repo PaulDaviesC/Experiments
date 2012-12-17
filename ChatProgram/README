@@ -1,1 +1,2 @@
-A simple chat program developed based on socket programming.
+A simple chat program developed based on socket programming.You have to run the server first. Then you have to  run the client,
+which will connect to specified IP at specified port,which is where the server is running.
