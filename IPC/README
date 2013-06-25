@@ -1,0 +1,12 @@
+This is a linux Kernel Device Driver for a simple Inter Process Communication device. This device can be used to pass strings of 4 characters long between two processes. It has made use of  the Kernel "comlpetions" functionality. You can test it as follows .
+
+Step 1:
+	Compile the module. This can be done by a simple command "make".
+Step 2:
+	Insert the module. This can be done by "make ins"
+Step 3:
+	Create the code for two read and write processes. The code is given as read.c and write.c. Compile it using "make exe"
+Step 4:
+	Create the device by using "make dev"
+Step 5:
+	Execute the read and write executables.
